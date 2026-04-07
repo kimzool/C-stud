@@ -1,4 +1,4 @@
-
+﻿
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
@@ -25,22 +25,26 @@ int main() {
 }
 
 void Intro(void) {
-	printf(" ****** START ****** \n");
+	printf(" ****** START ****** \n"); // 제목 출력 부분
 	printf("두개의 정수 입력 : \n "); // 출력하고 main() 함수의 Intro()로 돌아간다.
 
-}
+} 
 
-int Intput(void) {
+
+
+int Input(void) {
 	int input;
-	scanf("%d", &input); // 첫번째 호출에는 7 입력하고 두번째는 8 입력한다.
+	scanf("%d", &input); // 정수형 숫자 입력
 	return input; // 입력한 값을 main()함수의 Input()으로 보낸다.
 }
 
-int Add(int i, int j) {
+
+int Add(int i, int j) { // int i, int j -> 매개변수 ( 형 선언 )
 	return i + j; // 7과 8을 더한 결과 15를 main() 함수의 Add(a,b) 로 보낸다.
 }
 
-void Result_Print(int val) {
+
+void Result_Print(int val) { // result -> val ( 정수형 )
 	printf("덧셈에 대한 결과 : %d \n", val);
 	printf("****** END ******");
 }
